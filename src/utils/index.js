@@ -25,7 +25,7 @@ export const useDebounce = (value, delay) => {
 
     useEffect(() => {
         const timeout = setTimeout(() => setDebounceValue(value), delay)
-        return () => cleanObject(timeout)
+        return () => clearTimeout(timeout)
     }, [value, delay])
 
     return debounceValue;
