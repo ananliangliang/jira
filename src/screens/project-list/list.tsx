@@ -1,4 +1,4 @@
-import {User} from "./search-panel";
+import {User} from "screens/project-list/search-panel";
 
 interface Project {
     id: string

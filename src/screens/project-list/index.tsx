@@ -1,8 +1,8 @@
-import {List} from "./list";
+import {List} from "screens/project-list/list";
 import {useEffect, useState} from "react";
 import qs from "qs";
-import {cleanObject, useDebounce, useMount} from "../../utils";
-import {SearchPanel} from "./search-panel";
+import {cleanObject, useDebounce, useMount} from "utils/index";
+import {SearchPanel} from "screens/project-list/search-panel";
 
 
 const aipUrl = process.env.REACT_APP_API_URL
